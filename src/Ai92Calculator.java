@@ -1,9 +1,11 @@
-public class Ai92Calculator {
-    double cena = 42.74;
-    double tax = 0.13;
-    double fullPrice = cena * (1 + tax);
+package src;
 
-    public double calculate(double razmer) {
-        return razmer * fullPrice;
+public class Ai92Calculator {
+    double price = 42.74;
+    double tax = 0.13;
+    double fullPrice = price * (1 + tax);
+
+    public double calculate(double volume) {
+        return volume * fullPrice;
     }
 }
